@@ -25,5 +25,7 @@ cv = {
 url = "https://engine.scicrop.com/scicrop-engine-web/api/v1/jobs/post_resume"
 headers = {'Content-type': 'application/json'}
 r = requests.post(url, data=json.dumps(cv), headers=headers)
+print(r.text)
+print(r.status_code)
 
 
